@@ -15,7 +15,7 @@ def contar_y_ordenar(lista):
             conteo[elemento] = 1
     
     # Ordenar el diccionario por los valores (cantidad de ocurrencias) en orden ascendente.
-    conteo_ordenado = {k: v for k, v in sorted(conteo.items(), key=lambda item: item[1])}
+    conteo_ordenado = dict(sorted( conteo.items() ))
     
     return conteo_ordenado
 
